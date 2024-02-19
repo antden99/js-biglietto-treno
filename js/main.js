@@ -11,3 +11,14 @@ console.log(age);
 // Calcolo il prezzo del biglietto, moltiplicando la distanza da percorrere per il prezzo a km
 const price = (distance * 0.21);
 console.log(price);
+
+// Applico uno sconto attraverso un if se vengono rispettati determinati requisiti
+if (age < 18) {
+    let final = price - (price * 0.20);
+    console.log(final);
+} else if (age > 65) {
+    let final = price - (price * 0.40);
+    console.log(final);
+} else {
+    console.log(price);
+}
