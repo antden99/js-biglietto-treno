@@ -15,10 +15,12 @@ console.log(price);
 // Applico uno sconto attraverso un if se vengono rispettati determinati requisiti
 if (age < 18) {
     let final = price - (price * 0.20);
-    console.log(final);
+    final = final.toFixed(2);
+    console.log(`il prezzo dinale del biglietto con lo sconto del 20% applicato è di €${final}`);
 } else if (age > 65) {
     let final = price - (price * 0.40);
-    console.log(final);
+    final = final.toFixed(2);
+    console.log(`il prezzo dinale del biglietto con lo sconto del 40% applicato è di €${final}`);
 } else {
     console.log(price);
 }
